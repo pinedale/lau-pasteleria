@@ -1,26 +1,28 @@
 @import "tailwindcss";
 
-:root {
-	--background: #ffffff;
-	--foreground: #171717;
-}
-
 @theme inline {
-	--color-background: var(--background);
-	--color-foreground: var(--foreground);
-	--font-sans: var(--font-geist-sans);
-	--font-mono: var(--font-geist-mono);
+  /* Colores de Lau Pastelería */
+  --color-cafe: #8C603F;
+  --color-ink: #3B2A20;
+  --color-muted: #6B5446;
+  --color-cream: #FFF8F1;
+  --color-pink: #F6D3DE;
+  --color-latte: #EBDCCB;
+  --color-on-dark: #FBEFE6;
+  --color-whatsapp: #25D366;
+
+  /* Fuentes (las variables vienen de next/font en layout.tsx) */
+  --font-display: var(--font-fredoka);
+  --font-sans: var(--font-mulish);
+  --font-script: var(--font-allura);
 }
 
-@media (prefers-color-scheme: dark) {
-	:root {
-		--background: #0a0a0a;
-		--foreground: #ededed;
-	}
+html {
+  scroll-behavior: smooth;
 }
 
-body {
-	background: var(--background);
-	color: var(--foreground);
-	font-family: Arial, Helvetica, sans-serif;
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
