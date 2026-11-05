@@ -1,21 +1,25 @@
-import { whatsappLink } from "@/lib/site";
-import Logo from "@/components/Logo";
-
-
+import Header from "@/components/Header";
+import { navLinks } from "@/lib/site";
 
 export default function Home() {
-	return (
-		<main className="p-10">
-			<h1 className="font-display text-cafe text-5xl">Lau Pastelería</h1>
-			<p className="font-script text-4xl text-muted">Hecho con amor</p>
-			<p className="mt-4">Tortas, postres y sorpresas en Barranquilla.</p>
-			<a href={whatsappLink("¡Hola Lau! Quiero hacer un pedido 🎂")} className="text-cafe underline">
-				Pedir por WhatsApp
-			</a>
-			<Logo className="h-12 w-auto text-cafe" />
-			<div className="bg-ink p-6 mt-6">
-				<Logo className="h-12 w-auto text-white" />
-			</div>
-		</main>
-	);
+  return (
+    <>
+      <Header />
+      <main>
+        <section id="inicio" className="p-10">
+          <h1 className="font-display text-5xl text-cafe">Lau Pastelería</h1>
+        </section>
+
+        {navLinks.map((link) => (
+          <section
+            key={link.href}
+            id={link.href.slice(1)}
+            className="min-h-screen border-t border-latte p-10"
+          >
+            <h2 className="font-display text-3xl">{link.label}</h2>
+          </section>
+        ))}
+      </main>
+    </>
+  );
 }

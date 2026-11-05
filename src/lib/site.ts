@@ -11,3 +11,13 @@ export const site = {
 export function whatsappLink(message: string) {
   return `https://wa.me/${site.whatsapp}?text=${encodeURIComponent(message)}`;
 }
+
+export const navLinks = [
+  { href: "#productos", label: "Productos" },
+  { href: "#empresas", label: "Empresas" },
+  { href: "#eventos", label: "Eventos" },
+  { href: "#galeria", label: "Galería" },
+  { href: "#como-pedir", label: "Cómo pedir" },
+  { href: "#nosotros", label: "Nosotros" },
+  { href: "#contacto", label: "Contacto" },
+] as const;
