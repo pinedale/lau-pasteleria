@@ -1,4 +1,6 @@
 import Header from "@/components/Header";
+import Hero from "@/components/Hero";
+import SeasonBanner from "@/components/SeasonBanner";
 import { navLinks } from "@/lib/site";
 
 export default function Home() {
@@ -6,10 +8,9 @@ export default function Home() {
     <>
       <Header />
       <main>
-        <section id="inicio" className="p-10">
-          <h1 className="font-display text-5xl text-cafe">Lau Pastelería</h1>
-        </section>
-
+		<Hero />
+		<SeasonBanner />
+		
         {navLinks.map((link) => (
           <section
             key={link.href}

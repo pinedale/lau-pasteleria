@@ -10,6 +10,9 @@
   --color-latte: #EBDCCB;
   --color-on-dark: #FBEFE6;
   --color-whatsapp: #25D366;
+    --color-berry: #B4436C;      /* textos pequeños de sección (eyebrow) */
+  --color-berry-dark: #8E2F52; /* eyebrow sobre fondo rosado */
+  --color-blush: #F1DCE3;      /* borde del header */
 
   /* Fuentes (las variables vienen de next/font en layout.tsx) */
   --font-display: var(--font-fredoka);
