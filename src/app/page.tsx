@@ -1,4 +1,5 @@
 import BusinessSection from "@/components/BusinessSection";
+import EventsSection from "@/components/EventsSection";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import ProductsSection from "@/components/ProductsSection";
@@ -14,7 +15,9 @@ export default function Home() {
 		<SeasonBanner />
 		<ProductsSection />
 		<BusinessSection />
-        {navLinks.filter((link) => !["#productos", "#empresas"].includes(link.href)).map((link) => (
+		<EventsSection />
+
+        {navLinks.filter((link) => !["#productos", "#empresas", "#eventos"].includes(link.href)).map((link) => (
           <section
             key={link.href}
             id={link.href.slice(1)}
