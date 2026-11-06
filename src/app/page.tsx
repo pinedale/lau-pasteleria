@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import ProductsSection from "@/components/ProductsSection";
 import SeasonBanner from "@/components/SeasonBanner";
 import { navLinks } from "@/lib/site";
 
@@ -10,8 +11,8 @@ export default function Home() {
       <main>
 		<Hero />
 		<SeasonBanner />
-		
-        {navLinks.map((link) => (
+		<ProductsSection />
+        {navLinks.filter((link) => link.href !== "#productos").map((link) => (
           <section
             key={link.href}
             id={link.href.slice(1)}
