@@ -1,5 +1,6 @@
 import BusinessSection from "@/components/BusinessSection";
 import EventsSection from "@/components/EventsSection";
+import GallerySection from "@/components/GallerySection";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import ProductsSection from "@/components/ProductsSection";
@@ -16,8 +17,9 @@ export default function Home() {
 		<ProductsSection />
 		<BusinessSection />
 		<EventsSection />
+		<GallerySection />
 
-        {navLinks.filter((link) => !["#productos", "#empresas", "#eventos"].includes(link.href)).map((link) => (
+        {navLinks.filter((link) => !["#productos", "#empresas", "#eventos", "#galeria"].includes(link.href)).map((link) => (
           <section
             key={link.href}
             id={link.href.slice(1)}
