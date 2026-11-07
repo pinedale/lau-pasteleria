@@ -1,3 +1,4 @@
+import AboutSection from "@/components/AboutSection";
 import BusinessSection from "@/components/BusinessSection";
 import EventsSection from "@/components/EventsSection";
 import GallerySection from "@/components/GallerySection";
@@ -20,8 +21,9 @@ export default function Home() {
 		<EventsSection />
 		<GallerySection />
 		<HowToOrderSection />
+		<AboutSection />
 
-        {navLinks.filter((link) => !["#productos", "#empresas", "#eventos", "#galeria", "#como-pedir"].includes(link.href)).map((link) => (
+        {navLinks.filter((link) => !["#productos", "#empresas", "#eventos", "#galeria", "#como-pedir", "#nosotros"].includes(link.href)).map((link) => (
           <section
             key={link.href}
             id={link.href.slice(1)}
