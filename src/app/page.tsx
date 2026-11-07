@@ -3,6 +3,7 @@ import EventsSection from "@/components/EventsSection";
 import GallerySection from "@/components/GallerySection";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import HowToOrderSection from "@/components/HowToOrderSection";
 import ProductsSection from "@/components/ProductsSection";
 import SeasonBanner from "@/components/SeasonBanner";
 import { navLinks } from "@/lib/site";
@@ -18,8 +19,9 @@ export default function Home() {
 		<BusinessSection />
 		<EventsSection />
 		<GallerySection />
+		<HowToOrderSection />
 
-        {navLinks.filter((link) => !["#productos", "#empresas", "#eventos", "#galeria"].includes(link.href)).map((link) => (
+        {navLinks.filter((link) => !["#productos", "#empresas", "#eventos", "#galeria", "#como-pedir"].includes(link.href)).map((link) => (
           <section
             key={link.href}
             id={link.href.slice(1)}
