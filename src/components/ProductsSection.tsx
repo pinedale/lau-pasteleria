@@ -5,7 +5,7 @@ import { whatsappLink } from "@/lib/site";
 
 export default function ProductsSection() {
   return (
-    <section id="productos" className="mx-auto max-w-300 pt-10 pb-10 md:px-6 md:pt-22">
+    <section id="productos" className="mx-auto max-w-300 px-4 py-10 md:px-6 md:pt-22">
       <div className="mb-10 flex flex-col gap-2.5">
         <h2 className="font-display text-[30px] font-bold md:text-[44px]">Nuestros productos</h2>
         <p className="max-w-[60ch] text-muted">

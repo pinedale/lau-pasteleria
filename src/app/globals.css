@@ -17,6 +17,10 @@
   --color-ink-line: #5a4334; /* línea del footer */
   --color-whatsapp-ink: #0b2b17; /* texto sobre el verde de WhatsApp */
 
+  --radius-card: 1.75rem;   /* 28px */
+  --radius-panel: 2.25rem;  /* 36px */
+  --radius-hero: 2.5rem;    /* 40px */
+
   /* Fuentes (las variables vienen de next/font en layout.tsx) */
   --font-display: var(--font-fredoka);
   --font-sans: var(--font-mulish);
@@ -25,7 +29,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 80px;
+  scroll-padding-top: 88px;
 }
 
 @media (prefers-reduced-motion: reduce) {

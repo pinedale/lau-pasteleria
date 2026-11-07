@@ -27,7 +27,7 @@ export default function Hero() {
             href={whatsappLink("Hola, quiero cotizar una torta")}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex min-h-11 items-center rounded-full bg-cafe px-6.5-[15px] font-bold text-white transition-opacity hover:opacity-90"
+            className="inline-flex min-h-11 items-center rounded-full bg-cafe px-6.5 py-3.75 font-bold text-white transition-opacity hover:opacity-90"
           >
             Cotizar por WhatsApp
           </a>
@@ -52,7 +52,8 @@ export default function Hero() {
           height={1600}
           sizes="(min-width: 768px) 50vw, 100vw"
           preload
-          className="relative h-90 w-full rounded-[28px] object-cover object-[center_25%] md:h-140 md:rounded-[40px]"
+          className="relative aspect-square w-full rounded-card object-cover object-[center_35%] md:aspect-auto md:h-140 md:rounded-hero"
+
         />
       </div>
     </section>

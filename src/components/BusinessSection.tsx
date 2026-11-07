@@ -49,7 +49,7 @@ export default function BusinessSection() {
           </p>
 
           <div className="flex items-center gap-3 border-y border-on-dark/35 py-3 text-on-dark">
-            <InvoiceIcon className="size-6.5rink-0" />
+            <InvoiceIcon className="size-6.5 shrink-0" />
             <p className="text-[15px] leading-snug">
               <strong className="font-bold">Facturación electrónica</strong>
               <br />
