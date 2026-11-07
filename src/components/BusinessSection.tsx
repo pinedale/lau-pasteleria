@@ -40,7 +40,7 @@ export default function BusinessSection() {
           </p>
 
           <h2 className="font-display text-[30px] leading-[1.1] font-bold text-balance md:text-[40px]">
-            Catering y cajas sorpresa corporativas
+            Catering y cajas corporativas
           </h2>
 
           <p className="text-on-dark">
@@ -61,7 +61,7 @@ export default function BusinessSection() {
 
           <a
             href={whatsappLink(
-              "Hola, quiero cotizar catering o cajas sorpresa para mi empresa",
+              "Hola, quiero cotizar catering o cajas corporativas para mi empresa",
             )}
             target="_blank"
             rel="noopener noreferrer"

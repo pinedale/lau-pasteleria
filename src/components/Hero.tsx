@@ -13,7 +13,7 @@ export default function Hero() {
         </p>
 
         <h1 className="font-display text-[38px] leading-[1.05] font-bold text-balance md:text-6xl">
-          Tortas, postres y sorpresas hechos para celebrar
+          Tortas, postres y sorpresas hechas para celebrar
         </h1>
 
         <p className="max-w-[34ch] text-[17px] text-muted md:text-[19px]">
