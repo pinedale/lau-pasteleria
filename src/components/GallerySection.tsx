@@ -5,7 +5,7 @@ import { site } from "@/lib/site";
 
 export default function GallerySection() {
   return (
-    <section id="galeria" className="mx-auto max-w-[1200px] px-4 py-10 md:px-6 md:py-12">
+    <section id="galeria" className="mx-auto max-w-300 px-4 py-10 md:px-6 md:py-12">
       <h2 className="mb-8 font-display text-[30px] font-bold md:text-[40px]">Galería</h2>
 
       <div className="grid grid-flow-dense grid-cols-2 gap-3 md:grid-cols-3 md:gap-4 lg:grid-cols-4">
@@ -24,7 +24,7 @@ export default function GallerySection() {
                   ? "(min-width: 1024px) 50vw, (min-width: 768px) 66vw, 100vw"
                   : "(min-width: 1024px) 25vw, (min-width: 768px) 33vw, 50vw"
               }
-              className={`h-[180px] w-full rounded-[20px] object-cover md:h-[340px] md:rounded-[24px] ${
+              className={`h-45 w-full rounded-[20px] object-cover md:h-85 md:rounded-3xl ${
                 isWide ? "col-span-2" : ""
               }`}
             />
@@ -59,7 +59,7 @@ export default function GallerySection() {
               src={video.src}
               poster={video.poster}
               label={video.label}
-              className="h-[480px] w-[270px] shrink-0 snap-start rounded-[24px] bg-latte object-cover"
+              className="h-120 w-67.5 shrink-0 snap-start rounded-3xl bg-latte object-cover"
             />
           ))}
         </div>

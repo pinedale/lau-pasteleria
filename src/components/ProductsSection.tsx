@@ -5,7 +5,7 @@ import { whatsappLink } from "@/lib/site";
 
 export default function ProductsSection() {
   return (
-    <section id="productos" className="mx-auto max-w-[1200px] px-4 pt-10 pb-10 md:px-6 md:pt-[88px]">
+    <section id="productos" className="mx-auto max-w-300 pt-10 pb-10 md:px-6 md:pt-22">
       <div className="mb-10 flex flex-col gap-2.5">
         <h2 className="font-display text-[30px] font-bold md:text-[44px]">Nuestros productos</h2>
         <p className="max-w-[60ch] text-muted">
@@ -22,9 +22,9 @@ export default function ProductsSection() {
           width={1200}
           height={1600}
           sizes="(min-width: 768px) 50vw, 100vw"
-          className="h-[420px] w-full object-cover md:h-[560px]"
+          className="h-105 w-full object-cover md:h-140"
         />
-        <div className="flex flex-col justify-center gap-4 px-[22px] py-7 md:p-12">
+        <div className="flex flex-col justify-center gap-4 px-5.5 py-7 md:p-12">
           <p className="font-display text-sm font-semibold tracking-[0.16em] text-berry-dark uppercase">
             Destacado
           </p>
@@ -40,7 +40,7 @@ export default function ProductsSection() {
             href={whatsappLink("Hola, quiero cotizar una torta personalizada")}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex min-h-11 items-center self-start rounded-full bg-cafe px-[26px] py-[15px] font-bold text-white transition-opacity hover:opacity-90"
+            className="inline-flex min-h-11 items-center self-start rounded-full bg-cafe px-6.5 py-3.75 font-bold text-white transition-opacity hover:opacity-90"
           >
             Cotizar torta personalizada
           </a>

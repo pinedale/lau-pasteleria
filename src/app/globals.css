@@ -1,18 +1,21 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme inline {
   /* Colores de Lau Pastelería */
-  --color-cafe: #8C603F;
-  --color-ink: #3B2A20;
-  --color-muted: #6B5446;
-  --color-cream: #FFF8F1;
-  --color-pink: #F6D3DE;
-  --color-latte: #EBDCCB;
-  --color-on-dark: #FBEFE6;
-  --color-whatsapp: #25D366;
-    --color-berry: #B4436C;      /* textos pequeños de sección (eyebrow) */
-  --color-berry-dark: #8E2F52; /* eyebrow sobre fondo rosado */
-  --color-blush: #F1DCE3;      /* borde del header */
+  --color-cafe: #8c603f;
+  --color-ink: #3b2a20;
+  --color-muted: #6b5446;
+  --color-cream: #fff8f1;
+  --color-pink: #f6d3de;
+  --color-latte: #ebdccb;
+  --color-on-dark: #fbefe6;
+  --color-whatsapp: #25d366;
+  --color-berry: #b4436c; /* textos pequeños de sección (eyebrow) */
+  --color-berry-dark: #8e2f52; /* eyebrow sobre fondo rosado */
+  --color-blush: #f1dce3; /* borde del header */
+  --color-sand: #e8d9cc; /* texto secundario sobre café oscuro */
+  --color-ink-line: #5a4334; /* línea del footer */
+  --color-whatsapp-ink: #0b2b17; /* texto sobre el verde de WhatsApp */
 
   /* Fuentes (las variables vienen de next/font en layout.tsx) */
   --font-display: var(--font-fredoka);

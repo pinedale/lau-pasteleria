@@ -9,7 +9,7 @@ export default function SeasonBanner() {
 
   return (
     <section id="temporada" className="bg-pink">
-      <div className="mx-auto flex max-w-[1200px] flex-col items-center gap-6 px-4 py-9 md:flex-row md:gap-10 md:px-6 md:py-14">
+      <div className="mx-auto flex max-w-300 flex-col items-center gap-6 px-4 py-9 md:flex-row md:gap-10 md:px-6 md:py-14">
         <div className="flex w-full gap-4 md:flex-1">
           <Image
             src={main.src}
@@ -17,7 +17,7 @@ export default function SeasonBanner() {
             width={main.width}
             height={main.height}
             sizes="(min-width: 768px) 30vw, 60vw"
-            className="h-60 min-w-0 flex-[3] rounded-[28px] object-cover md:h-[360px]"
+            className="h-60 min-w-0 flex-3 rounded-[28px] object-cover md:h-90"
           />
           <Image
             src={secondary.src}
@@ -25,7 +25,7 @@ export default function SeasonBanner() {
             width={secondary.width}
             height={secondary.height}
             sizes="(min-width: 768px) 20vw, 40vw"
-            className="h-60 min-w-0 flex-[2] rounded-[28px] object-cover md:h-[360px]"
+            className="h-60 min-w-0 flex-2 rounded-[28px] object-cover md:h-90"
           />
         </div>
 

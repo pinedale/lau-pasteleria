@@ -5,9 +5,9 @@ export default function Hero() {
   return (
     <section
       id="inicio"
-      className="mx-auto grid max-w-[1200px] items-center gap-12 px-4 py-10 md:grid-cols-2 md:px-6 md:pt-16 md:pb-[72px]"
+      className="mx-auto grid max-w-300 items-center gap-12 px-4 py-10 md:grid-cols-2 md:px-6 md:pt-16 md:pb-18"
     >
-      <div className="flex flex-col gap-[22px]">
+      <div className="flex flex-col gap-5.5">
         <p className="font-display text-[15px] font-semibold tracking-[0.16em] text-berry uppercase">
           Pastelería en Barranquilla
         </p>
@@ -27,13 +27,13 @@ export default function Hero() {
             href={whatsappLink("Hola, quiero cotizar una torta")}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex min-h-11 items-center rounded-full bg-cafe px-[26px] py-[15px] font-bold text-white transition-opacity hover:opacity-90"
+            className="inline-flex min-h-11 items-center rounded-full bg-cafe px-6.5-[15px] font-bold text-white transition-opacity hover:opacity-90"
           >
             Cotizar por WhatsApp
           </a>
           <a
             href="#productos"
-            className="inline-flex min-h-11 items-center rounded-full border-2 border-cafe px-6 py-[13px] font-bold text-cafe transition-colors hover:bg-cafe hover:text-white"
+            className="inline-flex min-h-11 items-center rounded-full border-2 border-cafe px-6 py-3.25 font-bold text-cafe transition-colors hover:bg-cafe hover:text-white"
           >
             Ver productos
           </a>
@@ -52,7 +52,7 @@ export default function Hero() {
           height={1600}
           sizes="(min-width: 768px) 50vw, 100vw"
           preload
-          className="relative h-[360px] w-full rounded-[28px] object-cover object-[center_25%] md:h-[560px] md:rounded-[40px]"
+          className="relative h-90 w-full rounded-[28px] object-cover object-[center_25%] md:h-140 md:rounded-[40px]"
         />
       </div>
     </section>

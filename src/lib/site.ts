@@ -6,6 +6,8 @@ export const site = {
   instagramHandle: "@laupasteleria.baq",
   deliveryAreas: ["Barranquilla", "Soledad", "Puerto Colombia"],
   orderNoticeDays: 3,
+  whatsappDisplay: "316 739 8814",
+  domain: "laupasteleriabaq.com",
 } as const;
 
 export function whatsappLink(message: string) {

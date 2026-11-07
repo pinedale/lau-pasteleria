@@ -14,7 +14,7 @@ const eventServices = [
 
 export default function EventsSection() {
   return (
-    <section id="eventos" className="mx-auto max-w-[1200px] px-4 py-10 md:px-6 md:py-16">
+    <section id="eventos" className="mx-auto max-w-300 px-4 py-10 md:px-6 md:py-16">
       <div className="grid items-start gap-10 md:grid-cols-[1fr_2fr]">
         <div className="flex flex-col gap-3.5">
           <h2 className="font-display text-[30px] leading-[1.1] font-bold md:text-[40px]">
@@ -35,7 +35,7 @@ export default function EventsSection() {
             width={1600}
             height={1294}
             sizes="(min-width: 768px) 33vw, 100vw"
-            className="mt-2 h-[260px] w-full rounded-[28px] object-cover md:h-[380px]"
+            className="mt-2 h-65 w-full rounded-[28px] object-cover md:h-95"
           />
         </div>
 

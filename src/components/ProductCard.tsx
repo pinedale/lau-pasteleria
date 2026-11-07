@@ -13,7 +13,7 @@ export default function ProductCard({ product }: { product: Product }) {
         width={image.width}
         height={image.height}
         sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
-        className="h-[210px] w-full object-cover md:h-[260px]"
+        className="h-52.5 w-full object-cover md:h-65"
       />
 
       <div className="flex flex-1 flex-col gap-3 p-6">
@@ -23,7 +23,7 @@ export default function ProductCard({ product }: { product: Product }) {
 
         {items.length > 0 &&
           (itemsStyle === "list" ? (
-            <ul className="list-disc pl-[18px] text-[15px] leading-relaxed text-muted">
+            <ul className="list-disc pl-4.5 text-[15px] leading-relaxed text-muted">
               {items.map((item) => (
                 <li key={item}>{item}</li>
               ))}

@@ -1,38 +1,33 @@
-import AboutSection from "@/components/AboutSection";
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
+import SeasonBanner from "@/components/SeasonBanner";
+import ProductsSection from "@/components/ProductsSection";
 import BusinessSection from "@/components/BusinessSection";
 import EventsSection from "@/components/EventsSection";
 import GallerySection from "@/components/GallerySection";
-import Header from "@/components/Header";
-import Hero from "@/components/Hero";
 import HowToOrderSection from "@/components/HowToOrderSection";
-import ProductsSection from "@/components/ProductsSection";
-import SeasonBanner from "@/components/SeasonBanner";
-import { navLinks } from "@/lib/site";
+import AboutSection from "@/components/AboutSection";
+import ContactSection from "@/components/ContactSection";
+import Footer from "@/components/Footer";
+import WhatsAppFloat from "@/components/WhatsAppFloat";
 
 export default function Home() {
   return (
     <>
       <Header />
       <main>
-		<Hero />
-		<SeasonBanner />
-		<ProductsSection />
-		<BusinessSection />
-		<EventsSection />
-		<GallerySection />
-		<HowToOrderSection />
-		<AboutSection />
-
-        {navLinks.filter((link) => !["#productos", "#empresas", "#eventos", "#galeria", "#como-pedir", "#nosotros"].includes(link.href)).map((link) => (
-          <section
-            key={link.href}
-            id={link.href.slice(1)}
-            className="min-h-screen border-t border-latte p-10"
-          >
-            <h2 className="font-display text-3xl">{link.label}</h2>
-          </section>
-        ))}
+        <Hero />
+        <SeasonBanner />
+        <ProductsSection />
+        <BusinessSection />
+        <EventsSection />
+        <GallerySection />
+        <HowToOrderSection />
+        <AboutSection />
+        <ContactSection />
       </main>
+      <Footer />
+      <WhatsAppFloat />
     </>
   );
 }
