@@ -1,3 +1,4 @@
+import StructuredData from "@/components/StructuredData";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import SeasonBanner from "@/components/SeasonBanner";
@@ -14,6 +15,7 @@ import WhatsAppFloat from "@/components/WhatsAppFloat";
 export default function Home() {
   return (
     <>
+      <StructuredData />
       <Header />
       <main>
         <Hero />

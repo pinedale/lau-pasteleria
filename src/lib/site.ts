@@ -8,6 +8,7 @@ export const site = {
   orderNoticeDays: 3,
   whatsappDisplay: "316 739 8814",
   domain: "laupasteleriabaq.com",
+  description: "Tortas personalizadas, postres, cajas sorpresa y catering para empresas en Barranquilla. Haz tu pedido por WhatsApp.",
 } as const;
 
 export function whatsappLink(message: string) {
