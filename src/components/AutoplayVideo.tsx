@@ -38,7 +38,7 @@ export default function AutoplayVideo({ src, poster, label, className, playbackR
 
     observer.observe(video);
     return () => observer.disconnect();
-  }, []);
+  }, [playbackRate]);    
 
   return (
     <video

@@ -1,3 +1,5 @@
+import { season } from "./season";
+
 export const site = {
   name: "Lau Pastelería",
   url: "https://laupasteleriabaq.com",
@@ -15,7 +17,8 @@ export function whatsappLink(message: string) {
   return `https://wa.me/${site.whatsapp}?text=${encodeURIComponent(message)}`;
 }
 
-export const navLinks = [
+export const navLinks = [ 
+  ...(season.enabled ? [{ href: "#temporada", label: "Navidad" }] : []),
   { href: "#productos", label: "Productos" },
   { href: "#empresas", label: "Empresas" },
   { href: "#eventos", label: "Eventos" },
@@ -23,4 +26,4 @@ export const navLinks = [
   { href: "#como-pedir", label: "Cómo pedir" },
   { href: "#nosotros", label: "Nosotros" },
   { href: "#contacto", label: "Contacto" },
-] as const;
+]

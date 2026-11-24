@@ -24,7 +24,7 @@ const cateringItems = [
 export default function BusinessSection() {
   return (
     <section id="empresas" className="px-4 py-6 md:px-6 md:py-12">
-      <div className="mx-auto grid max-w-300 overflow-hidden rounded-[36px] bg-cafe text-white md:grid-cols-2">
+      <div className="mx-auto grid max-w-300 overflow-hidden rounded-panel bg-cafe text-white md:grid-cols-2">
         <Image
           src="/images/cajas-empresa.webp"
           alt="Cajas de catering con charcutería, frutas y galletas para empresas en Barranquilla"
