@@ -16,6 +16,8 @@
   --color-sand: #e8d9cc; /* texto secundario sobre café oscuro */
   --color-ink-line: #5a4334; /* línea del footer */
   --color-whatsapp-ink: #0b2b17; /* texto sobre el verde de WhatsApp */
+  --color-wine: #6f0523; /* texto sobre el rosa de la sección de contacto */
+  --color-gold: #ebc974; /* texto sobre el café de la sección de contacto */
 
   --radius-card: 1.75rem;   /* 28px */
   --radius-panel: 2.25rem;  /* 36px */
